@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frontier-lab"
+version = "0.1.0"
+description = "Beginner-friendly tools for exploring old game installs."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Frontier Lab Contributors" }]
+dependencies = []
+
+[project.scripts]
+frontier-lab = "frontier_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
